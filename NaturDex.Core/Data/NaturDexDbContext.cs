@@ -17,6 +17,8 @@ namespace NaturDex.Core.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+
         }
     }
 }
