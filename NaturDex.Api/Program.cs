@@ -26,7 +26,6 @@ if (connectionString != null &&
         Password = userInfo[1],
         Database = uri.AbsolutePath.TrimStart('/'),
         SslMode = SslMode.Require,
-        TrustServerCertificate = true
     };
 
     connectionString = builderNpgsql.ToString();
@@ -43,7 +42,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Version = "v1",
         Title = "NaturDex API",
-        Description = "API til håndtering af dyr i NaturDex-databasen. Alle endpoints bruger JSON.",
+        Description = "API til at tilgå NaturDex-databasen. Alle endpoints bruger JSON.",
         Contact = new OpenApiContact
         {
             Name = "NaturDex Team",

@@ -1,7 +1,7 @@
 namespace NaturDex.Tests;
 
 [TestClass]
-public class AnimalsControllerTests
+public class ApiEndpointTests
 {
     [TestMethod]
     public void TestMethod1()
