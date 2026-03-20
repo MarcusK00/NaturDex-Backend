@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NaturDex.Core.Models
 {
-    internal class Animal
+    public class Animal
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NaturDex.Core.Repositories
 {
-    internal class AnimalRepository
+    public class AnimalRepository
     {
     }
 }
