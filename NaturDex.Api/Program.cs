@@ -11,16 +11,19 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
                        ?? Environment.GetEnvironmentVariable("DATABASE_URL");
 
 // If the URL is in the postgres:// or postgresql:// format (like Render), convert it to Npgsql format
+// If the URL is in the postgres:// or postgresql:// format (like Render), convert it to Npgsql format
 if (connectionString != null &&
     (connectionString.StartsWith("postgres://") || connectionString.StartsWith("postgresql://")))
 {
     var uri = new Uri(connectionString);
     var userInfo = uri.UserInfo.Split(':');
 
+    var port = uri.Port > 0 ? uri.Port : 5432; // <-- default to 5432 if port is -1
+
     var builderNpgsql = new Npgsql.NpgsqlConnectionStringBuilder
     {
         Host = uri.Host,
-        Port = uri.Port,
+        Port = port,
         Username = userInfo[0],
         Password = userInfo[1],
         Database = uri.AbsolutePath.TrimStart('/'),
