@@ -15,6 +15,6 @@ namespace NaturDex.Core.Models
         public string? Region { get; set; }
         public string? DietDetails { get; set; }
         public float AverageWeightKg { get; set; }
-        public int AverageLifeSpan { get; set; }
+        public int AverageLifespan { get; set; }
     }
 }
