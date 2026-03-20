@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturDex.Api", "NaturDex\NaturDex.Api.csproj", "{69BFF572-F22D-44F6-B978-0CA55F0322E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturDex.Core", "NaturDex.Core\NaturDex.Core.csproj", "{5811BAE4-C7EC-46D8-B991-E4B28613D5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturDex.Tests", "NaturDex.Tests\NaturDex.Tests.csproj", "{619F231A-0D23-4DE3-838B-C00E11668009}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{69BFF572-F22D-44F6-B978-0CA55F0322E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69BFF572-F22D-44F6-B978-0CA55F0322E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69BFF572-F22D-44F6-B978-0CA55F0322E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5811BAE4-C7EC-46D8-B991-E4B28613D5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5811BAE4-C7EC-46D8-B991-E4B28613D5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5811BAE4-C7EC-46D8-B991-E4B28613D5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5811BAE4-C7EC-46D8-B991-E4B28613D5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619F231A-0D23-4DE3-838B-C00E11668009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619F231A-0D23-4DE3-838B-C00E11668009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619F231A-0D23-4DE3-838B-C00E11668009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619F231A-0D23-4DE3-838B-C00E11668009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
