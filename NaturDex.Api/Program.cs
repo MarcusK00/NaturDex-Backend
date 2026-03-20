@@ -54,8 +54,7 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -63,7 +62,7 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "";
         c.DocumentTitle = "NaturDex API Dokumentation";
     });
-}
+
 
 app.UseHttpsRedirection();
 
