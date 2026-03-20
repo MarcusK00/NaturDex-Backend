@@ -81,7 +81,7 @@ namespace NaturDex.Core.Repositories
 
             if (existingAnimal == null) throw new InvalidOperationException($"Animal with id {animal.Id} not found.");
 
-            existingAnimal.Spieces = animal.Spieces;
+            existingAnimal.Species = animal.Species;
             existingAnimal.ScientificName = animal.ScientificName;
             existingAnimal.Description = animal.Description;
             existingAnimal.Region = animal.Region;

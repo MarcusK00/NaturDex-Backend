@@ -9,7 +9,7 @@ namespace NaturDex.Core.Models
     public class Animal
     {
         public int Id { get; set; }
-        public string? Spieces { get; set; }
+        public string? Species { get; set; }
         public string? ScientificName { get; set; }
         public string? Description { get; set; }
         public string? Region { get; set; }
