@@ -1,0 +1,6 @@
+@NaturDex_HostAddress = http://localhost:5234
+
+GET {{NaturDex_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
